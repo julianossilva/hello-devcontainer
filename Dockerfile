@@ -18,5 +18,7 @@ RUN useradd -u ${UID} -g ${GROUP} -s /bin/sh -m ${USERNAME}
 
 USER ${UID}:${GID}
 
+WORKDIR /home/${USERNAME}/app 
+
 #Run command as non root
 #RUN command... 
